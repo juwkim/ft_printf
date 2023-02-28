@@ -37,27 +37,33 @@ For more detailed information, look at the [**subject of this project**](https:/
 
 ### Requirements
 
-The library is written in C language and thus needs the **`c` compiler** and some standard **C libraries** to run.
+The library is written in C language and thus needs the **C compiler** and some standard **C libraries** to run.
 
 ### Instructions
 
-**1. Compiling the library**
+- Pull files ↙️
+```shell
+$ git clone https://github.com/juwkim/ft_printf
+```
 
-To compile the library, go to its path and run:
-
+- To make ft_printf ↙️
 ```shell
 $ make
 ```
 
-**2. Cleaning all object files (.o) and executable files (.a)**
+- To clean all object files (.o) and library file (.a) ↙️
 
 ```shell
 $ make fclean
 ```
 
-**3. Using it in your code**
+- To check this repository complies with [norminette](https://github.com/42School/norminette) ↙️
 
-To use the library functions in your code, simply include its header:
+```shell
+$ make norm
+```
+
+- To use ft_printf in your code ↙️
 
 ```C
 #include "ft_printf.h"
