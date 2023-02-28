@@ -46,7 +46,7 @@ The library is written in C language and thus needs the **C compiler** and some 
 $ git clone https://github.com/juwkim/ft_printf
 ```
 
-- To make ft_printf ↙️
+- To build ft_printf ↙️
 ```shell
 $ make
 ```
