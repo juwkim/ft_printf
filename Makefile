@@ -6,7 +6,7 @@
 #    By: juwkim <juwkim@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/12 05:18:16 by juwkim            #+#    #+#              #
-#    Updated: 2023/03/01 00:24:36 by juwkim           ###   ########.fr        #
+#    Updated: 2023/03/01 00:38:08 by juwkim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,10 @@
 CC                  :=	cc
 CFLAGS              :=	-Wall -Wextra -Werror -march=native -O2 -pipe
 ARFLAGS             := 	-rcs
+
+ifdef DEBUG
+	CFLAGS	+= -g -fsanitize=address,leak,undefined
+endif
 
 # ---------------------------------------------------------------------------- #
 #   Define the directories                                                     #
@@ -84,8 +88,8 @@ norm:
 	@(norminette | grep Error) || (printf "$(GREEN)[PRINTF] Norminette Success\n$(DEF_COLOR)")
 
 debug:
-	$(CFLAGS) += -fsanitize=leak -fsanitize=address
-	@$(MAKE) all
+	@$(MAKE) fclean
+	@$(MAKE) DEBUG=1 all
 	
 .PHONY:	all clean fclean re dir_guard norm debug
 
