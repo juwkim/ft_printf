@@ -52,19 +52,16 @@ $ make
 ```
 
 - To clean all object files (.o) and library file (.a) ↙️
-
 ```shell
 $ make fclean
 ```
 
 - To check this repository complies with [norminette](https://github.com/42School/norminette) ↙️
-
 ```shell
 $ make norm
 ```
 
 - To use ft_printf in your code ↙️
-
 ```C
 #include "ft_printf.h"
 ```
