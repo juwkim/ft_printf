@@ -8,6 +8,7 @@
 
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/juwkim/ft_printf?color=lightblue">
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/juwkim/ft_printf?color=critical">
 	<img alt="Code language count" src="https://img.shields.io/github/languages/count/juwkim/ft_printf?color=yellow">
 	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/juwkim/ft_printf?color=blue">
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/juwkim/ft_printf?color=green">
